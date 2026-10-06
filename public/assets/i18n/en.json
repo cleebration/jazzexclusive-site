@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "concerts": "Gigs",
+    "band": "About us",
+    "blog": "Blog",
+    "cd": "Our CD",
+    "newsletter": "Newsletter",
+    "imprint": "Imprint",
+    "privacy": "Privacy"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "mainnav": "Main navigation",
+    "home": "Home",
+    "language": "Choose language"
+  },
+  "home": {
+    "next": "Our next gig",
+    "who": "Who we are",
+    "cardConcerts": "Gigs",
+    "cardBand": "About us",
+    "cardCd": "Our CD “Soft Groove”",
+    "cardNewsletter": "Sign up for the newsletter",
+    "news": "From the blog"
+  },
+  "events": {
+    "upcoming": "Upcoming gigs",
+    "past": "Past gigs",
+    "backAll": "← All gigs"
+  },
+  "news": { "title": "Blog" },
+  "band": {
+    "title": "About us",
+    "lineup": "The band",
+    "guests": "Extended line-up",
+    "violin": "Jazz violin",
+    "piano": "Piano, accordion, oboe",
+    "bass": "Double bass",
+    "drums": "Drums",
+    "sax": "Saxophone",
+    "vibes": "Vibraphone"
+  },
+  "cd": { "title": "Our CD wants to come to you!" },
+  "today": { "title": "We’re so glad you’re here tonight!" },
+  "newsletter": { "title": "Sign up for the newsletter" },
+  "foot": { "booking": "Booking enquiries" },
+  "legal": {
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "binding": "The German version is the binding one. This English translation is for information only."
+  }
+}

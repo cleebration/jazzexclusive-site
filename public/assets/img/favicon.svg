@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Der Hut aus dem Bandlogo, vereinfacht als Flächen: bei 16 px lesbar. -->
+  <rect width="64" height="64" rx="12" fill="#111111"/>
+  <ellipse cx="32" cy="42" rx="25" ry="9" fill="#C9541A"/>
+  <path d="M17 41c0-14 4-24 15-24s15 10 15 24c-4 3-26 3-30 0z" fill="#F29A2E"/>
+  <path d="M17.5 35c6 3 23 3 29 0v5c-6 3-23 3-29 0z" fill="#B8461A"/>
+</svg>

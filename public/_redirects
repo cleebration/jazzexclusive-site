@@ -1,0 +1,48 @@
+# ===========================================================================
+#  Weiterleitungen jazzexclusive.at — alte Wix-Adressen → neue Seiten
+#  (Seitenliste aus der Wix-Sitemap, 06.10.2026)
+#
+#  EINE Quelle, ZWEI Leser (wie babowalls.com / lko-site):
+#   1. build.mjs übersetzt die 3xx-Zeilen nach worker/redirects.generated.js
+#   2. Cloudflares Asset-Schicht liest diese Datei selbst
+#   - KEINE 200-Zeilen — unter Workers Endlosschleife
+#   - Sonderfälle ÜBER den Platzhaltern; die erste passende Regel gewinnt
+#   - Umlaute so, wie der Browser sie schickt: prozent-kodiert
+#   - /blog und /heute heißen gleich wie auf Wix (/heute = Ziel des QR-Codes)
+# ===========================================================================
+
+# --- Seiten -----------------------------------------------------------------
+/team-3       /band      301
+/team         /band      301
+/team/*       /band      301
+/our-cd       /cd        301
+/event-list   /konzerte  301
+
+# --- Auftritte: Wix-Slug → Eintrag im Events-Hub -----------------------------
+/event-details/jazz-im-wirtshaus                                                    /event?event=jazz-im-wirtshaus 301
+/event-details/nomen-est-omen                                                       /event?event=nomen-est-omen 301
+/event-details/jazzexclusive-im-alten-schlachthof-wels                              /event?event=jazzexclusive-im-alten-schlachthof-wels 301
+/event-details/wegen-krankheit-abgesagt-jazz-exclusive                              /event?event=jazzexclusive-im-alten-schlachthof-wels-abgesagt 301
+/event-details/unsere-freude-ist-musik-jubilaumskonzert-des-singkreises-gunskirchen /event?event=unsere-freude-ist-musik-singkreis-gunskirchen 301
+/event-details/unsere-freude-ist-musik-jubilaumskonzert-des-singkreises-gunskirchen/form /event?event=unsere-freude-ist-musik-singkreis-gunskirchen 301
+/event-details/*                                                                    /konzerte 301
+
+# --- Blog (Wix-Beiträge) -----------------------------------------------------
+/post/schade-schade-schade /post?post=schade-schade-schade 301
+/post/war-das-ein-gig /post?post=war-das-ein-gig 301
+/post/wer-hat-an-der-uhr-gedreht /post?post=wer-hat-an-der-uhr-gedreht 301
+/post/jazzexclusive-unser-unvergessliches-sommerkonzert-erlebnis-mit-dem-universit%C3%A4tsorchester-linz-im-fr /post?post=sommerkonzert-mit-dem-universitaetsorchester-linz 301
+/post/singkreis-gunskirchen-mit-uns /post?post=singkreis-gunskirchen-mit-uns 301
+/post/open-air-im-schloss-auhof /post?post=open-air-im-schloss-auhof 301
+/post/mittwoch-7-dezember-2022-offenes-kulturhaus-v%C3%B6cklabruck /post?post=offenes-kulturhaus-voecklabruck 301
+/post/samstag-19-november-2022-kornspeicher-wels /post?post=kornspeicher-wels 301
+/post/jazzexclusive-bei-der-er%C3%B6ffnung-des-stadttheaters-wels-28-august-2021 /post?post=eroeffnung-stadttheater-wels 301
+/post/jazz-am-pienkenhof-15-august-2020 /post?post=jazz-am-pienkenhof 301
+/post/jazzexclusive-gegen-gewitter-im-musikpavillon-linz-am-10-juli-2020 /post?post=gewitter-im-musikpavillon-linz 301
+/post/bad-schallerbach-am-1-juli-2020 /post?post=bad-schallerbach-2020 301
+/post/unsere-cd-ist-da /post?post=unsere-cd-ist-da 301
+/post/konzert-in-st-valentin-am-29-februar-2020 /post?post=konzert-in-st-valentin 301
+/post/20-jahre-boogie-swing-konzert-mit-mojo-blues-band-in-attnang-am-16-november-2019 /post?post=20-jahre-boogie-und-swing-attnang 301
+/post/kurkonzert-in-bad-schallerbach-am-3-juli-2019 /post?post=kurkonzert-bad-schallerbach-2019 301
+/post/* /blog 301
+/blog/* /blog 301

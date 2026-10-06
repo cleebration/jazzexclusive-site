@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "concerts": "Konzerte",
+    "band": "Über uns",
+    "blog": "Blog",
+    "cd": "Unsere CD",
+    "newsletter": "Newsletter",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "a11y": {
+    "skip": "Zum Inhalt springen",
+    "mainnav": "Hauptnavigation",
+    "home": "Startseite",
+    "language": "Sprache wählen"
+  },
+  "home": {
+    "next": "Unser nächster Auftritt",
+    "who": "Wer wir sind",
+    "cardConcerts": "Konzerte",
+    "cardBand": "Über uns",
+    "cardCd": "Unsere CD „Soft Groove“",
+    "cardNewsletter": "Anmeldung zum Newsletter",
+    "news": "Aus dem Blog"
+  },
+  "events": {
+    "upcoming": "Kommende Auftritte",
+    "past": "Vergangene Auftritte",
+    "backAll": "← Alle Auftritte"
+  },
+  "news": { "title": "Blog" },
+  "band": {
+    "title": "Über uns",
+    "lineup": "Die Band",
+    "guests": "Erweiterte Besetzung",
+    "violin": "Jazzvioline",
+    "piano": "Piano, Akkordeon, Oboe",
+    "bass": "Kontrabass",
+    "drums": "Schlagzeug",
+    "sax": "Saxophon",
+    "vibes": "Vibraphon"
+  },
+  "cd": { "title": "Unsere CD will zu dir!" },
+  "today": { "title": "Wir freuen uns, dass du heute da bist!" },
+  "newsletter": { "title": "Anmeldung zum Newsletter" },
+  "foot": { "booking": "Konzertanfragen" },
+  "legal": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "binding": "Maßgeblich ist die deutsche Fassung. Die englische Übersetzung dient nur der Information."
+  }
+}
