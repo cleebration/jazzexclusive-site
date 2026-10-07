@@ -13,8 +13,8 @@ Angelegt 06.10.2026 (Claude, Projekt „Music JazzExclusive“). Theme: Hut-Logo
 | `/band` | Text „Über uns“ + Besetzung | hier |
 | `/cd` | „Soft Groove“, Bestellung per E-Mail | hier |
 | `/heute` | Ziel des QR-Codes am Konzertabend | hier |
-| `/newsletter` | Link zum bestehenden Mailchimp-Formular | extern |
-| `/impressum` · `/datenschutz` | **Medieninhaber noch offen** (BITTE-ERGAENZEN) | hier |
+| `/newsletter` | Anmeldung → `/api/subscribe` → EmailOctopus (cleebration-Konto, Liste „JazzExclusive“) | Worker |
+| `/impressum` · `/datenschutz` | Medieninhaber Chris H. Leeb | hier |
 
 Alte Wix-Adressen (`/team-3`, `/our-cd`, `/event-details/…`, `/post/…`) leitet der Worker
 weiter (`public/_redirects`, geprüft in `test/redirects.test.mjs`).
@@ -23,6 +23,8 @@ weiter (`public/_redirects`, geprüft in `test/redirects.test.mjs`).
 
 ```bash
 npm install
+npx wrangler secret put EMAILOCTOPUS_API_KEY   # einmalig
+npx wrangler secret put EMAILOCTOPUS_LIST_ID   # einmalig, Liste „JazzExclusive“
 npm test             # baut und prüft Weiterleitungen + Module
 npm run preflight    # vor dem Livegang: Feeds, Wix-Bilder, Impressum-Platzhalter
 npm run deploy       # baut und lädt zu Cloudflare (jazzexclusive-site.<konto>.workers.dev)

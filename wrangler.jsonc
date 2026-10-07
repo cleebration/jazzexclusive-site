@@ -16,6 +16,14 @@
   //   { "pattern": "www.jazzexclusive.at", "custom_domain": true }
   // ],
 
+  // Newsletter-Secrets NICHT hier, sondern einmalig per
+  //   npx wrangler secret put EMAILOCTOPUS_API_KEY
+  //   npx wrangler secret put EMAILOCTOPUS_LIST_ID
+  "vars": {
+    "EMAILOCTOPUS_TAGS": "jazzexclusive",
+    "EMAILOCTOPUS_API_VERSION": "v2"
+  },
+
   "assets": {
     "directory": "public",
     "binding": "ASSETS",

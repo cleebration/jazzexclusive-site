@@ -131,7 +131,6 @@ function fontLinks() {
 const globals = {
   SITE_URL: config.siteUrl,
   MAIL: config.mail,
-  NEWSLETTER_URL: config.newsletterUrl,
   FACEBOOK: config.social.facebook,
   X_URL: config.social.x,
   LOCALES: JSON.stringify(config.locales),

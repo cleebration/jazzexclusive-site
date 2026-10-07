@@ -1,6 +1,6 @@
 /**
  * Prüft, dass der Worker die alten Wix-Adressen von jazzexclusive.at
- * richtig weiterleitet und auf www. führt.
+ * richtig weiterleitet, auf www. führt und /api/subscribe erreichbar ist.
  *
  *   npm test          (baut vorher, damit worker/redirects.generated.js stimmt)
  */
@@ -63,6 +63,10 @@ ok(ziel(await hole("/post/mittwoch-7-dezember-2022-offenes-kulturhaus-v%C3%B6ckl
   ok(r3.status === 200 && (await r3.text()) === "ASSET", "/konzerte geht an die Asset-Schicht");
   ok((await hole("/blog")).status === 200, "/blog bleibt /blog (gleiche Adresse wie auf Wix)");
   ok((await hole("/heute")).status === 200, "/heute bleibt /heute (Ziel des QR-Codes)");
+  const r5 = await hole("/api/subscribe");
+  ok(r5.status === 405, "/api/subscribe nimmt nur POST an");
+  const r6 = await hole("/api/subscribe", BASIS, { method: "POST", body: JSON.stringify({ email: "a@b.at", consent: true }), headers: { "Content-Type": "application/json" } });
+  ok(r6.status === 500, "/api/subscribe ohne Secrets → 500 statt stiller Erfolg");
 }
 
 {

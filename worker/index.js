@@ -1,10 +1,11 @@
 /**
  * Einstiegspunkt für Cloudflare Workers — jazzexclusive.at.
- * Abgeleitet von lko-site, OHNE Newsletter-Schnittstelle: die Anmeldung
- * läuft weiter über den Mailchimp-Link (site.config.mjs → newsletterUrl).
+ * Abgeleitet von lko-site, MIT Newsletter über EmailOctopus (Konto von
+ * cleebration, eigene Liste „JazzExclusive“; Secrets siehe README).
  *
  * Mit `run_worker_first: true` (wrangler.jsonc) sieht dieser Worker JEDE
- * Anfrage. Er hat genau zwei Aufgaben:
+ * Anfrage. Er hat genau drei Aufgaben:
+ *   0. /api/subscribe — Newsletter-Anmeldung (functions/api/subscribe.js)
  *   1. alte Wix-Adressen weiterleiten (Regeln aus public/_redirects)
  *   2. auf den kanonischen Namen führen: jazzexclusive.at → www.
  * Alles Übrige geht über die ASSETS-Bindung an die Asset-Schicht.
@@ -13,6 +14,7 @@
  * entscheidet, und diese Stelle ist getestet (test/redirects.test.mjs).
  */
 import regeln from "./redirects.generated.js";
+import { onRequestPost, onRequestOptions } from "../functions/api/subscribe.js";
 
 const KANONISCH = "www.jazzexclusive.at";
 const DOMAIN = "jazzexclusive.at";
@@ -38,8 +40,14 @@ function findeWeiterleitung(pfad) {
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
+
+    if (url.pathname === "/api/subscribe") {
+      if (request.method === "OPTIONS") return onRequestOptions();
+      if (request.method === "POST") return onRequestPost({ request, env, ctx });
+      return new Response("Method Not Allowed", { status: 405, headers: { Allow: "POST, OPTIONS" } });
+    }
 
     const treffer = findeWeiterleitung(url.pathname);
     const ziel = treffer ? new URL(treffer.ziel, url) : new URL(url);

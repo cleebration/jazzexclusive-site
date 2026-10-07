@@ -3,23 +3,22 @@
   "title": "Newsletter | JazzExclusive",
   "description": "Anmeldung zum Newsletter von JazzExclusive – Konzerttermine per E-Mail.",
   "nav": "newsletter",
-  "out": "newsletter.html"
+  "out": "newsletter.html",
+  "scripts": "<script type=\"module\" src=\"/assets/newsletter-widget.js\"></script>"
 }
 -->
 
 <h1 class="page-title" data-i18n="newsletter.title">Anmeldung zum Newsletter</h1>
 
 <div class="wrap">
-  <section class="prose" style="text-align:center">
-    <!-- Wie auf Wix: Die Anmeldung läuft über das bestehende Mailchimp-Formular
-         (eepurl). Diese Seite sammelt selbst keine Daten. Wechsel auf
-         EmailOctopus (wie LKO) ist möglich — dann Newsletter-Kit + /api/subscribe
-         aus lko-site übernehmen und den Datenschutz-Absatz anpassen. -->
-    <p data-lang="de">Wir schreiben dir, wenn wir wieder wo spielen – und wenn es Neues von uns gibt.</p>
-    <p data-lang="en">We’ll write to you when we’re playing again – and when there’s news from us.</p>
-    <p>
-      <a class="button" href="{{NEWSLETTER_URL}}" rel="noopener" target="_blank" data-lang="de">Zur Anmeldung</a>
-      <a class="button" href="{{NEWSLETTER_URL}}" rel="noopener" target="_blank" data-lang="en">Sign up</a>
-    </p>
-  </section>
+  <!-- Newsletter-Kit wie lko-site. Es schickt an /api/subscribe
+       (worker/index.js → functions/api/subscribe.js); der Schlüssel des
+       EmailOctopus-Kontos liegt nur als Secret beim Worker. Bis 07.10.2026
+       lief die Anmeldung über Mailchimp. -->
+  <span data-lang="de"><newsletter-signup endpoint="/api/subscribe" site="jazzexclusive"
+      heading="Newsletter" text="Wir schreiben dir, wenn wir wieder wo spielen – und wenn es Neues von uns gibt."
+      privacy-url="/datenschutz"></newsletter-signup></span>
+  <span data-lang="en"><newsletter-signup endpoint="/api/subscribe" site="jazzexclusive"
+      heading="Newsletter" text="We’ll write to you when we’re playing again – and when there’s news from us."
+      privacy-url="/datenschutz"></newsletter-signup></span>
 </div>

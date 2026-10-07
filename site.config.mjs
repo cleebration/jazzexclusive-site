@@ -35,9 +35,8 @@ export default {
   // die Alias-Domain im cleebration-Workspace an (Playbook, Schritt E).
   mail: "band@jazzexclusive.at",
 
-  // Newsletter: bisher Mailchimp (Link aus dem Wix-Kopf). Bleibt vorerst so —
-  // die Seite /newsletter verlinkt nur dorthin, sie sammelt selbst nichts.
-  newsletterUrl: "http://eepurl.com/gJY5Cf",
+  // Newsletter: EmailOctopus statt Mailchimp (Entscheidung Chris, 07.10.2026),
+  // Formular auf /newsletter → /api/subscribe → Worker (Secrets beim Worker).
 
   social: {
     facebook: "https://www.facebook.com/MyJazzExclusive",
