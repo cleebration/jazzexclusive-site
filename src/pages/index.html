@@ -1,52 +1,126 @@
 <!--meta
 {
-  "title": "JazzExclusive – Jazz aus Oberösterreich",
-  "description": "JazzExclusive – von Jazz-Standards über Latin bis zu Funk-Grooves, Eigenkompositionen von Werner Fait, Jazzvioline mit Denise Fait, Peter Favretti an den Drums, Chris H. Leeb am Kontrabass.",
+  "title": "JazzExclusive – Swing, Latin & Funk aus Oberösterreich",
+  "description": "JazzExclusive – Jazz-Standards, Latin- und Funk-Grooves und viele Eigenkompositionen von Werner Fait. Jazzvioline, Piano, Kontrabass und Drums. Konzerte, Hochzeiten, Firmenfeiern, Bars.",
   "out": "index.html",
   "canonical": "/",
-  "scripts": "<script type=\"module\" src=\"/assets/event-widget.i18n.js\"></script>\n<script type=\"module\" src=\"/assets/blog-widget.js\"></script>"
+  "scripts": "<script type=\"module\" src=\"/assets/event-widget.i18n.js\"></script>\n<script type=\"module\" src=\"/assets/blog-widget.js\"></script>\n<script type=\"module\" src=\"/assets/newsletter-widget.js\"></script>"
 }
 -->
 
-<!-- Begrüßung der Wix-Startseite („Willkommen! Wir sind Jazz Exclusive – Keep Swingin'“), Stand 06.10.2026. -->
-<figure class="stage">
-  <img src="/assets/img/band.jpg" alt="JazzExclusive: Denise Fait, Peter Favretti, Chris H. Leeb, Werner Fait" width="1800" height="547" />
-  <figcaption>
-    <span data-lang="de">Willkommen! Wir sind JazzExclusive</span>
-    <span data-lang="en">Welcome! We are JazzExclusive</span>
-    <small>Keep swingin'</small>
-  </figcaption>
-</figure>
+<!-- Layout 2026, freigegeben von Chris am 07.10.2026 (Design-Canvas „JazzExclusive Website-Layout“). -->
+<div class="dark overflow-clip">
+  <figure class="stage">
+    <img src="/assets/img/band.jpg" alt="Die vier Musiker*innen von JazzExclusive mit Geige und Kontrabass vor einem Springbrunnen" width="1800" height="547" />
+    <div class="stamp" aria-hidden="true">KEEP<br />SWINGIN’</div>
+  </figure>
 
-<h1 class="page-title" data-i18n="home.next">Unser nächster Auftritt</h1>
-<div class="wrap">
-  <event-list feed="{{FEED_EVENTS}}" detail-url="/event" show="upcoming"></event-list>
+  <section class="intro wrap">
+    <h1 class="display display--xl">
+      <span data-lang="de">Swing. Latin. <span class="hl">Funk.</span><br />Live aus Oberösterreich.</span>
+      <span data-lang="en">Swing. Latin. <span class="hl">Funk.</span><br />Live from Upper Austria.</span>
+    </h1>
+    <div class="intro__row">
+      <p class="lead" data-lang="de">Jazzvioline, Piano, Kontrabass und Drums – seit 2004 auf Bühnen, in Bars und auf Festen. Mit vielen Eigenkompositionen von Werner Fait.</p>
+      <p class="lead" data-lang="en">Jazz violin, piano, double bass and drums – on stages, in bars and at parties since 2004. With many original compositions by Werner Fait.</p>
+      <div class="btn-row">
+        <a class="btn btn--accent" href="/konzerte" data-i18n="home.ctaGigs">Nächste Auftritte</a>
+        <a class="btn btn--ghost" href="/band#buchen" data-i18n="nav.book">Band buchen</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">SWING · LATIN · FUNK · EIGENKOMPOSITIONEN · GRAPPELLI · SWING · LATIN · FUNK · EIGENKOMPOSITIONEN · GRAPPELLI ·</div>
+
+  <section class="section wrap">
+    <p class="kicker" data-i18n="home.next">Nächster Auftritt</p>
+    <event-list feed="{{FEED_EVENTS}}" detail-url="/event" show="upcoming"></event-list>
+    <p style="margin-top:1.5rem"><a href="/konzerte" data-i18n="home.allDates">Alle Termine →</a></p>
+  </section>
 </div>
 
-<section class="hero wrap">
-  <h2 class="hero__kicker" data-i18n="home.who">Wer wir sind</h2>
-  <div class="hero__text">
-    <div data-lang="de">
-      <p>Jazz-Standards, Latin und Funk-Grooves – und viele Eigenkompositionen von Werner Fait. Die Jazzvioline von Denise Fait führt, Peter Favretti sitzt an den Drums, Chris H. Leeb spielt Kontrabass.</p>
-      <p>Seit 2004 auf Bühnen und in Bars in Oberösterreich – und gerne auch weiter weg.</p>
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <p class="kicker" data-i18n="home.who">Wer wir sind</p>
+      <h2 class="display display--m" style="margin-bottom:1.5rem">
+        <span data-lang="de">Grappelli im Herzen. Groove im Bauch.</span>
+        <span data-lang="en">Grappelli at heart. Groove in the bones.</span>
+      </h2>
+      <div data-lang="de">
+        <p>JazzExclusive gibt es seit 2004, gegründet von Werner Fait. Im Repertoire: Jazz-Standards, Latin- und Funk-Grooves – und sehr viele Eigenkompositionen von Werner.</p>
+        <p>Denise Fait an der Jazzvioline, Werner Fait an Piano, Akkordeon und Oboe, Chris H. Leeb am Kontrabass, Peter Favretti am Schlagzeug. Für besondere Abende: Christian Bachner am Saxophon und Jakob Bik am Vibraphon.</p>
+      </div>
+      <div data-lang="en">
+        <p>JazzExclusive was founded in 2004 by Werner Fait. The repertoire: jazz standards, Latin and funk grooves – and a great many original compositions by Werner.</p>
+        <p>Denise Fait on jazz violin, Werner Fait on piano, accordion and oboe, Chris H. Leeb on double bass, Peter Favretti on drums. For special evenings: Christian Bachner on saxophone and Jakob Bik on vibraphone.</p>
+      </div>
+      <p><a href="/band" style="font-weight:600" data-i18n="home.meet">Die Band kennenlernen →</a></p>
     </div>
-    <div data-lang="en">
-      <p>Jazz standards, Latin and funk grooves – and many original compositions by Werner Fait. Denise Fait’s jazz violin leads, Peter Favretti is on drums, Chris H. Leeb plays double bass.</p>
-      <p>On stages and in bars in Upper Austria since 2004 – and happy to travel further afield.</p>
+    <div class="tilt"><img src="/assets/img/sextett.jpg" alt="JazzExclusive als Sextett mit Saxophon und Vibraphon" width="900" height="1346" /></div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="wrap">
+    <div class="head-row">
+      <h2 class="display display--l">
+        <span data-lang="de">Euer Fest.<br /><span class="hl">Unser Swing.</span></span>
+        <span data-lang="en">Your party.<br /><span class="hl">Our swing.</span></span>
+      </h2>
+      <a class="btn btn--accent" href="/band#buchen" data-i18n="home.request">Anfrage stellen</a>
+    </div>
+    <div class="occasions">
+      <div class="occ occ--red"><div class="occ__num">01</div>
+        <h3 data-i18n="occ.concert">Konzerte</h3>
+        <p data-lang="de">Ganze Jazzabende mit Eigenkompositionen und Standards – als Quartett oder erweitert mit Saxophon und Vibraphon.</p>
+        <p data-lang="en">Full jazz evenings with original compositions and standards – as a quartet or extended with saxophone and vibraphone.</p></div>
+      <div class="occ occ--orange"><div class="occ__num">02</div>
+        <h3 data-i18n="occ.wedding">Hochzeiten &amp; Firmenfeiern</h3>
+        <p data-lang="de">Swing zum Sektempfang, Musik zum Dinner, Tanzbares für später.</p>
+        <p data-lang="en">Swing for the reception, music for dinner, something to dance to later.</p></div>
+      <div class="occ occ--gold"><div class="occ__num">03</div>
+        <h3 data-i18n="occ.bar">Cafés &amp; Bars</h3>
+        <p data-lang="de">Entspannte Barmusik, die Gespräche trägt – auf Wunsch in kleiner Besetzung.</p>
+        <p data-lang="en">Relaxed bar music that carries the conversation – in a small line-up if you like.</p></div>
     </div>
   </div>
 </section>
 
-<div class="wrap">
-  <div class="contact-grid">
-    <a class="contact-card" href="/konzerte"><h3 data-i18n="home.cardConcerts">Konzerte</h3></a>
-    <a class="contact-card" href="/band"><h3 data-i18n="home.cardBand">Über uns</h3></a>
-    <a class="contact-card" href="/cd"><h3 data-i18n="home.cardCd">Unsere CD „Soft Groove“</h3></a>
-    <a class="contact-card" href="/newsletter"><h3 data-i18n="home.cardNewsletter">Anmeldung zum Newsletter</h3></a>
+<section class="section cd-band" id="cd">
+  <div class="wrap split">
+    <img class="cd-cover" src="/assets/img/cd-soft-groove.jpg" alt="CD „Soft Groove“ von JazzExclusive" width="700" height="1043" />
+    <div>
+      <p class="kicker" data-i18n="home.cd">Unsere CD</p>
+      <h2 class="display" style="font-size:clamp(64px,8vw,112px);line-height:.9;margin-bottom:1.25rem">Soft Groove</h2>
+      <p data-lang="de">Alle Stücke von Werner, aufgenommen und gemischt von Christian Bachner, Frühjahr 2020.</p>
+      <p data-lang="en">All pieces by Werner, recorded and mixed by Christian Bachner in spring 2020.</p>
+      <div class="prices">
+        <div class="price">16 €<small data-i18n="cd.concert">beim Konzert</small></div>
+        <div class="price">18 €<small data-i18n="cd.post">per Post, inkl. Porto</small></div>
+      </div>
+      <a class="btn btn--accent" href="/cd" data-i18n="cd.order">CD bestellen</a>
+    </div>
   </div>
-</div>
+</section>
 
-<h2 class="section-title" data-i18n="home.news">Aus dem Blog</h2>
-<div class="wrap">
-  <blog-list feed="{{FEED_BLOG}}" post-url="/post" page-size="3" credit="off"></blog-list>
-</div>
+<section class="section dark">
+  <div class="wrap">
+    <div class="head-row" style="margin-bottom:2.5rem">
+      <h2 class="display display--l"><span data-lang="de">Von der Bühne</span><span data-lang="en">From the stage</span></h2>
+      <a href="/blog" style="font-weight:600" data-i18n="home.allPosts">Alle Beiträge →</a>
+    </div>
+    <blog-list feed="{{FEED_BLOG}}" post-url="/post" page-size="3" credit="off"></blog-list>
+  </div>
+</section>
+
+<section class="nl-strip">
+  <div class="wrap">
+    <h2 class="display display--m">
+      <span data-lang="de">Wir sagen Bescheid, wenn wir spielen.</span>
+      <span data-lang="en">We’ll let you know when we’re playing.</span>
+    </h2>
+    <span data-lang="de"><newsletter-signup endpoint="/api/subscribe" site="jazzexclusive" heading="" text="" privacy-url="/datenschutz"></newsletter-signup></span>
+    <span data-lang="en"><newsletter-signup endpoint="/api/subscribe" site="jazzexclusive" heading="" text="" privacy-url="/datenschutz"></newsletter-signup></span>
+  </div>
+</section>

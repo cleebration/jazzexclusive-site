@@ -27,8 +27,8 @@ export default {
   },
 
   images: {
-    logo: "/assets/img/jazzexclusive-logo.jpg",
-    og:   "/assets/img/band.jpg"
+    logo: "/assets/img/logo-quer.svg",
+    og:   "/assets/img/og-bild.jpg"
   },
 
   // Adresse aus dem Wix-Fuß („Konzertanfragen“). Kommt nach dem Umzug über

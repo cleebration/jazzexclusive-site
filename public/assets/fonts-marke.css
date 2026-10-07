@@ -1,0 +1,11 @@
+/* Markenschriften JazzExclusive (Logo 2026): DM Serif Display, Josefin Sans.
+   Selbst gehostet wie fonts.css (Quelle: @fontsource, SIL Open Font License),
+   Teilmenge „latin“ – deckt Deutsch und Englisch ab. Von Hand gepflegt. */
+@font-face { font-family: 'DM Serif Display'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(/assets/fonts/dm-serif-display-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'DM Serif Display'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(/assets/fonts/dm-serif-display-latin-400-italic.woff2) format('woff2'); }
+@font-face { font-family: 'Josefin Sans'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(/assets/fonts/josefin-sans-latin-600-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Josefin Sans'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(/assets/fonts/josefin-sans-latin-700-normal.woff2) format('woff2'); }

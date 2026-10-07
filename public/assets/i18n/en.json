@@ -1,12 +1,13 @@
 {
   "nav": {
     "concerts": "Gigs",
-    "band": "About us",
+    "band": "Band",
     "blog": "Blog",
-    "cd": "Our CD",
+    "cd": "CD",
     "newsletter": "Newsletter",
     "imprint": "Imprint",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "book": "Book the band"
   },
   "a11y": {
     "skip": "Skip to content",
@@ -15,22 +16,30 @@
     "language": "Choose language"
   },
   "home": {
-    "next": "Our next gig",
+    "next": "Next gig",
     "who": "Who we are",
     "cardConcerts": "Gigs",
     "cardBand": "About us",
     "cardCd": "Our CD “Soft Groove”",
     "cardNewsletter": "Sign up for the newsletter",
-    "news": "From the blog"
+    "news": "From the blog",
+    "ctaGigs": "Upcoming gigs",
+    "allDates": "All dates →",
+    "meet": "Meet the band →",
+    "request": "Send a request",
+    "cd": "Our CD",
+    "allPosts": "All posts →"
   },
   "events": {
     "upcoming": "Upcoming gigs",
     "past": "Past gigs",
     "backAll": "← All gigs"
   },
-  "news": { "title": "Blog" },
+  "news": {
+    "title": "Blog"
+  },
   "band": {
-    "title": "About us",
+    "title": "We love music.",
     "lineup": "The band",
     "guests": "Extended line-up",
     "violin": "Jazz violin",
@@ -38,15 +47,43 @@
     "bass": "Double bass",
     "drums": "Drums",
     "sax": "Saxophone",
-    "vibes": "Vibraphone"
+    "vibes": "Vibraphone",
+    "since": "Since 2004"
   },
-  "cd": { "title": "Our CD wants to come to you!" },
-  "today": { "title": "We’re so glad you’re here tonight!" },
-  "newsletter": { "title": "Sign up for the newsletter" },
-  "foot": { "booking": "Booking enquiries" },
+  "cd": {
+    "title": "Our CD wants to come to you!",
+    "concert": "at a concert",
+    "post": "by post, incl. postage",
+    "order": "Order the CD"
+  },
+  "today": {
+    "title": "We’re so glad you’re here tonight!"
+  },
+  "newsletter": {
+    "title": "Sign up for the newsletter"
+  },
+  "foot": {
+    "booking": "Booking enquiries"
+  },
   "legal": {
     "imprint": "Imprint",
     "privacy": "Privacy",
     "binding": "The German version is the binding one. This English translation is for information only."
+  },
+  "occ": {
+    "concert": "Concerts",
+    "wedding": "Weddings & company parties",
+    "bar": "Cafés & bars"
+  },
+  "form": {
+    "occasion": "Occasion",
+    "wedding": "Wedding",
+    "company": "Company party",
+    "other": "Other",
+    "date": "Date",
+    "place": "Place",
+    "name": "Name",
+    "text": "What do you have in mind?",
+    "send": "Send request"
   }
 }

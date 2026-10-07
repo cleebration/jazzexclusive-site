@@ -19,3 +19,18 @@ document.addEventListener("i18n:change", (e) => {
   }
   document.documentElement.setAttribute("lang", e.detail.lang);
 });
+
+/* Anfrageformular (Band buchen): kein Server – baut eine E-Mail an die
+   Band-Adresse und öffnet das E-Mail-Programm. Felder = name-Attribute. */
+for (const form of document.querySelectorAll("form[data-mailto]")) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const zeilen = [];
+    for (const el of form.elements) {
+      if (!el.name || !el.value) continue;
+      zeilen.push(`${el.name}: ${el.value}`);
+    }
+    const betreff = form.dataset.subject || "Anfrage";
+    location.href = `mailto:${form.dataset.mailto}?subject=${encodeURIComponent(betreff)}&body=${encodeURIComponent(zeilen.join("\n"))}`;
+  });
+}

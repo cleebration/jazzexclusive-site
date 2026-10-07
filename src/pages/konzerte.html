@@ -8,12 +8,21 @@
 }
 -->
 
-<h1 class="page-title" data-i18n="events.upcoming">Kommende Auftritte</h1>
-<div class="wrap">
-  <event-list feed="{{FEED_EVENTS}}" detail-url="/event" show="upcoming"></event-list>
-</div>
+<section class="page-head wrap">
+  <p class="kicker">Live</p>
+  <h1 class="display" data-i18n="nav.concerts">Konzerte</h1>
+</section>
 
-<h2 class="section-title" data-i18n="events.past">Vergangene Auftritte</h2>
-<div class="wrap">
-  <event-list feed="{{FEED_EVENTS}}" detail-url="/event" show="past"></event-list>
-</div>
+<section class="section dark">
+  <div class="wrap">
+    <p class="kicker" data-i18n="events.upcoming">Kommende Auftritte</p>
+    <event-list feed="{{FEED_EVENTS}}" detail-url="/event" show="upcoming" abo></event-list>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="display display--m" style="margin-bottom:2rem" data-i18n="events.past">Vergangene Auftritte</h2>
+    <event-list feed="{{FEED_EVENTS}}" detail-url="/event" show="past"></event-list>
+  </div>
+</section>

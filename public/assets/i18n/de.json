@@ -1,12 +1,13 @@
 {
   "nav": {
     "concerts": "Konzerte",
-    "band": "Über uns",
+    "band": "Band",
     "blog": "Blog",
-    "cd": "Unsere CD",
+    "cd": "CD",
     "newsletter": "Newsletter",
     "imprint": "Impressum",
-    "privacy": "Datenschutz"
+    "privacy": "Datenschutz",
+    "book": "Band buchen"
   },
   "a11y": {
     "skip": "Zum Inhalt springen",
@@ -15,22 +16,30 @@
     "language": "Sprache wählen"
   },
   "home": {
-    "next": "Unser nächster Auftritt",
+    "next": "Nächster Auftritt",
     "who": "Wer wir sind",
     "cardConcerts": "Konzerte",
     "cardBand": "Über uns",
     "cardCd": "Unsere CD „Soft Groove“",
     "cardNewsletter": "Anmeldung zum Newsletter",
-    "news": "Aus dem Blog"
+    "news": "Aus dem Blog",
+    "ctaGigs": "Nächste Auftritte",
+    "allDates": "Alle Termine →",
+    "meet": "Die Band kennenlernen →",
+    "request": "Anfrage stellen",
+    "cd": "Unsere CD",
+    "allPosts": "Alle Beiträge →"
   },
   "events": {
     "upcoming": "Kommende Auftritte",
     "past": "Vergangene Auftritte",
     "backAll": "← Alle Auftritte"
   },
-  "news": { "title": "Blog" },
+  "news": {
+    "title": "Blog"
+  },
   "band": {
-    "title": "Über uns",
+    "title": "Wir lieben Musik.",
     "lineup": "Die Band",
     "guests": "Erweiterte Besetzung",
     "violin": "Jazzvioline",
@@ -38,15 +47,43 @@
     "bass": "Kontrabass",
     "drums": "Schlagzeug",
     "sax": "Saxophon",
-    "vibes": "Vibraphon"
+    "vibes": "Vibraphon",
+    "since": "Seit 2004"
   },
-  "cd": { "title": "Unsere CD will zu dir!" },
-  "today": { "title": "Wir freuen uns, dass du heute da bist!" },
-  "newsletter": { "title": "Anmeldung zum Newsletter" },
-  "foot": { "booking": "Konzertanfragen" },
+  "cd": {
+    "title": "Unsere CD will zu dir!",
+    "concert": "beim Konzert",
+    "post": "per Post, inkl. Porto",
+    "order": "CD bestellen"
+  },
+  "today": {
+    "title": "Wir freuen uns, dass du heute da bist!"
+  },
+  "newsletter": {
+    "title": "Anmeldung zum Newsletter"
+  },
+  "foot": {
+    "booking": "Konzertanfragen"
+  },
   "legal": {
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "binding": "Maßgeblich ist die deutsche Fassung. Die englische Übersetzung dient nur der Information."
+  },
+  "occ": {
+    "concert": "Konzerte",
+    "wedding": "Hochzeiten & Firmenfeiern",
+    "bar": "Cafés & Bars"
+  },
+  "form": {
+    "occasion": "Anlass",
+    "wedding": "Hochzeit",
+    "company": "Firmenfeier",
+    "other": "Anderes",
+    "date": "Datum",
+    "place": "Ort",
+    "name": "Name",
+    "text": "Was schwebt dir vor?",
+    "send": "Anfrage senden"
   }
 }
