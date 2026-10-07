@@ -447,8 +447,8 @@ body { font-size: 20px; background: var(--je-cream); }
   background: var(--je-orange); color: var(--je-black); display: grid; place-items: center; text-align: center;
   transform: rotate(-12deg); font-family: var(--je-caps); font-weight: 700; font-size: 17px; letter-spacing: .12em; line-height: 1.3;
   box-shadow: 0 10px 30px rgba(0,0,0,.4); }
-@media (max-width: 640px) { .stamp { width: 96px; height: 96px; font-size: 12px; top: -18px; } }
-.intro { padding: 48px 0 72px; }
+@media (max-width: 900px) { .stamp { width: 96px; height: 96px; font-size: 12px; top: auto; bottom: -48px; right: 16px; } }
+.intro { padding-block: 48px 72px; }
 .intro__row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px; margin-top: 28px; }
 .intro .lead { margin: 0; }
 .ticker { background: var(--je-orange); color: var(--je-black); transform: rotate(-2deg); margin: 0 -40px; padding: 18px 0;
