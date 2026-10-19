@@ -4,7 +4,7 @@
   "description": "JazzExclusive – Jazz-Standards, Latin- und Funk-Grooves und viele Eigenkompositionen von Werner Fait. Jazzvioline, Piano, Kontrabass und Drums. Konzerte, Hochzeiten, Firmenfeiern, Bars.",
   "out": "index.html",
   "canonical": "/",
-  "scripts": "<script type=\"module\" src=\"/assets/event-widget.i18n.js\"></script>\n<script type=\"module\" src=\"/assets/blog-widget.js\"></script>\n<script type=\"module\" src=\"/assets/newsletter-widget.js\"></script>"
+  "scripts": "<script type=\"module\" src=\"/assets/event-widget.i18n.js\"></script>\n<script type=\"module\" src=\"/assets/blog-widget.js\"></script>\n<script type=\"module\" src=\"https://newsletter.cleebration.com/widget.js\"></script>"
 }
 -->
 
@@ -120,7 +120,6 @@
       <span data-lang="de">Wir sagen Bescheid, wenn wir spielen.</span>
       <span data-lang="en">We’ll let you know when we’re playing.</span>
     </h2>
-    <span data-lang="de"><newsletter-signup endpoint="/api/subscribe" site="jazzexclusive" heading="" text="" privacy-url="/datenschutz"></newsletter-signup></span>
-    <span data-lang="en"><newsletter-signup endpoint="/api/subscribe" site="jazzexclusive" heading="" text="" privacy-url="/datenschutz"></newsletter-signup></span>
+    <newsletter-signup site="jazzexclusive" heading="" text=""></newsletter-signup>
   </div>
 </section>

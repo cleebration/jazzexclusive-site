@@ -4,21 +4,16 @@
   "description": "Anmeldung zum Newsletter von JazzExclusive – Konzerttermine per E-Mail.",
   "nav": "newsletter",
   "out": "newsletter.html",
-  "scripts": "<script type=\"module\" src=\"/assets/newsletter-widget.js\"></script>"
+  "scripts": "<script type=\"module\" src=\"https://newsletter.cleebration.com/widget.js\"></script>"
 }
 -->
 
 <h1 class="page-title" data-i18n="newsletter.title">Anmeldung zum Newsletter</h1>
 
 <div class="wrap">
-  <!-- Newsletter-Kit wie lko-site. Es schickt an /api/subscribe
-       (worker/index.js → functions/api/subscribe.js); der Schlüssel des
-       EmailOctopus-Kontos liegt nur als Secret beim Worker. Bis 07.10.2026
-       lief die Anmeldung über Mailchimp. -->
-  <span data-lang="de"><newsletter-signup endpoint="/api/subscribe" site="jazzexclusive"
-      heading="Newsletter" text="Wir schreiben dir, wenn wir wieder wo spielen – und wenn es Neues von uns gibt."
-      privacy-url="/datenschutz"></newsletter-signup></span>
-  <span data-lang="en"><newsletter-signup endpoint="/api/subscribe" site="jazzexclusive"
-      heading="Newsletter" text="We’ll write to you when we’re playing again – and when there’s news from us."
-      privacy-url="/datenschutz"></newsletter-signup></span>
+  <!-- Zentraler Newsletter-Baustein (newsletter-hub, seit 19.10.2026).
+       Texte, Sprachen, Farben und Liste stehen an EINER Stelle:
+       cleebration-web/newsletter-hub/worker/sites.config.mjs (Schlüssel "jazzexclusive").
+       Eine Änderung dort gilt sofort auf allen Websites. -->
+  <newsletter-signup site="jazzexclusive"></newsletter-signup>
 </div>
