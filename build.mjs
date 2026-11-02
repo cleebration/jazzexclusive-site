@@ -133,6 +133,7 @@ const globals = {
   MAIL: config.mail,
   FACEBOOK: config.social.facebook,
   X_URL: config.social.x,
+  SHOP_URL: config.shopUrl,
   LOCALES: JSON.stringify(config.locales),
   DEFAULT_LOCALE: config.defaultLocale,
   AUTO_DETECT: JSON.stringify(config.autoDetectLanguage !== false),

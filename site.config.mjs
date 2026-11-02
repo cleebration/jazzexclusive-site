@@ -38,6 +38,10 @@ export default {
   // Newsletter: EmailOctopus statt Mailchimp (Entscheidung Chris, 07.10.2026),
   // Formular auf /newsletter → /api/subscribe → Worker (Secrets beim Worker).
 
+  /* Merch: eigener Spreadshop im cleebration-Konto (Shop-ID 1590602).
+     Spreadshop ist Verkäufer, die Band bekommt Provision (Chris, 02.11.2026). */
+  shopUrl: "https://jazzexclusive.myspreadshop.at",
+
   social: {
     facebook: "https://www.facebook.com/MyJazzExclusive",
     x: "http://www.twitter.com/myjazzexclusive"
