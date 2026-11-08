@@ -1,0 +1,21 @@
+<!--meta
+{
+  "title": "Walking Bass – das Rhythmusspiel | JazzExclusive",
+  "description": "Spiel die Walking-Bass-Linie im Takt mit. Kleines Rhythmusspiel von JazzExclusive – Ton an, kostenlos, ohne Anmeldung.",
+  "out": "walking-bass.html"
+}
+-->
+
+<h1 class="page-title">Walking Bass</h1>
+
+<div class="wrap">
+  <p style="max-width:60ch;margin:0 auto 1.5rem;text-align:center">Der Kontrabass hält im Jazz alles zusammen. Tippe genau dann, wenn die Note die goldene Linie trifft – und halte die Band im Swing.</p>
+  <div id="spiel" style="--sp-bg:#1E1B19;--sp-ink:#FBEFE4;--sp-akzent:#E2621B;--sp-akzent2:#F29A2E;--sp-font-display:var(--cl-font-display);--sp-font-body:var(--cl-font-body)"></div>
+  <noscript><p>Für das Spiel braucht dein Browser JavaScript.</p></noscript>
+  <p style="text-align:center;margin-top:1.5rem">Live klingt es besser: <a href="/konzerte">Unsere nächsten Konzerte</a></p>
+</div>
+
+<script type="module">
+  import { mount } from "/assets/spiele/walking-bass.js";
+  mount(document.getElementById("spiel"));
+</script>
